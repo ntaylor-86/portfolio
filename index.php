@@ -13,8 +13,6 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-  <!-- AnimateCSS -->
-  <link rel="stylesheet" href="assets/animate.css">
   <!-- CSS File -->
   <link rel="stylesheet" href="assets/20190714_style.css">
 
