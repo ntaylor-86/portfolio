@@ -1,0 +1,59 @@
+body {
+  background-color: #fffeff;
+  color: #333;
+  font-family: 'Ubuntu Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav-container {
+  padding-top: 3em;
+  padding-bottom: 4em;
+  letter-spacing: 1px;
+}
+
+.nt-box {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #333;
+  padding-top: 10px;
+  cursor: default;
+}
+.nt-box:hover {
+  color: #5badf0;
+  border: 3px dashed #5badf0;
+}
+
+.nav-links {
+  margin-top: 15px;
+}
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.nav-links a:hover {
+  border-bottom: 2px solid #c1e4ff;
+}
+
+.hello-world-wrapper {
+  margin: 2rem auto 2rem auto;
+  max-width: 600px;
+}
+.hello-world-image {
+  opacity: 0.75;
+  border-radius: 10px;
+}
+
+.hero {
+  cursor: default;
+}
+.hero-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.hero-links a:hover {
+  color: #5badf0;
+}
+
+
