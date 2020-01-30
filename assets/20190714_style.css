@@ -56,4 +56,21 @@ body {
   color: #5badf0;
 }
 
+.project-links {
+  color: #5badf0;
+}
+.project-links:hover {
+  text-decoration: none;
+  color: #5badf0;
+  border-bottom: 2px solid #5badf0;
+}
+
+.technologies-used-p {
+  letter-spacing: 1rem;;
+}
+.devicon {
+  width: auto;
+  height: 60px;
+}
+
 
