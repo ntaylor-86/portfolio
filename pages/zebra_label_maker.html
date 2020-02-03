@@ -6,21 +6,54 @@
     <!-- Problem -->
     <h5 class="mt-5">🙇‍♀️ Problem:</h5>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rem voluptate tenetur sequi deleniti quidem. Labore et aperiam quis debitis, error distinctio repellat quae, doloribus sed minus voluptas, quia ipsa.
+        Some customers request that a label is to be attached to each part on their order. 
+        Previously this process involved typing out the part details for every part into an 
+        excel spreadsheet and printing the labels for each part manually. This would take somebody 
+        hours to do.
     </p>
 
     <!-- Solution -->
     <h5 class="mt-4">🙌 Solution:</h5>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ex hic temporibus sint dolorem laborum praesentium, excepturi dicta maiores, dolorum numquam incidunt illo totam, labore soluta deleniti aperiam iure. Quibusdam.
+        Automate all the things! Using the same API endpoint that we setup for <a href="treeripper.php">treeRiPPER</a>, 
+        I was able re-use the API functions I had already written. Now that I had the data the next challenge was 
+        generating some labels with it. I found a great Python library called pylabels 
+        (big thanks to the developers of this library <a href="https://github.com/bcbnz/pylabels">https://github.com/bcbnz/pylabels</a>).
+        With this library I was able to generate a label for each part in the job and save it all into one pdf file. 
+    </p>
+    <p>
+        Now the process of printing labels can be broken down into 3 steps:
+        <ol>
+            <li>Open Zebra Label Maker</li>
+            <li>Enter the Job Number</li>
+            <li>Print</li>
+        </ol>
     </p>
 
     <!-- Screenshots -->
     <h5 class="mt-5">💻 Screenshots:</h5>
     <p class="font-italic" style="margin-bottom: 0.5rem;">
-        home page (where the user can can enter a new job or search for a previous job in history)
+        The GUI was made using QT Designer then translated into a Python file using the PyQT library.
     </p>
-    <img src="assets/dispatchagram/home.jpg" class="img-thumbnail">
+    <img src="assets/zebra_label_maker/main_window.jpg" class="img-thumbnail">
+
+    <p class="mt-5 font-italic" style="margin-bottom: 0.5rem;">
+        A dialog box opens when the labels are generated successfully.
+    </p>
+    <img src="assets/zebra_label_maker/program_succes.jpg" class="img-thumbnail">
+    
+    <p class="mt-5 font-italic" style="margin-bottom: 0.5rem;">
+        The program will open the PDF that is generated automatically, ready for the user to print it.
+    </p>
+    <p class="font-italic" style="margin-bottom: 0.5rem;">
+        (customers names blurred for privacy reasons)
+    </p>
+    <img src="assets/zebra_label_maker/label_pdf.jpg" class="img-thumbnail">
+
+    <p class="mt-5 font-italic" style="margin-bottom: 0.5rem;">
+        Picture of the labels after they have been printed.
+    </p>
+    <img src="assets/zebra_label_maker/label.jpg" class="img-thumbnail">
 
     <!-- Technologies Used -->
     <h5 class="mt-5">👨‍💻 Technologies Used:</h5>
